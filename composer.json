@@ -1,5 +1,5 @@
 {
-    "name": "knplabs/doctrine-behaviors",
+    "name": "kmoussouni/doctrine-behaviors",
     "description": "Doctrine Behavior Traits",
     "type": "symfony-bundle",
     "keywords": [
@@ -12,10 +12,10 @@
     ],
     "require": {
         "php": ">=8.0",
-        "doctrine/common": "^3.3",
+        "doctrine/common": "^3.5.0",
         "doctrine/persistence": "^2.5|^3.0",
-        "doctrine/dbal": "^3.3",
-        "doctrine/orm": "^2.12",
+        "doctrine/dbal": "^3.9.4",
+        "doctrine/orm": "^3.3.2",
         "doctrine/doctrine-bundle": "^2.6",
         "symfony/cache": "^5.4|^6.0",
         "symfony/dependency-injection": "^5.4|^6.0",
@@ -25,14 +25,15 @@
         "symfony/string": "^5.4|^6.0",
         "symfony/translation-contracts": "^2.4|^3.0",
         "nette/utils": "^3.2",
-        "ramsey/uuid": "^4.2"
+        "ramsey/uuid": "^4.2",
+        "doctrine/annotations": "^2.0",
+        "doctrine/lexer": "^3.0"
     },
     "require-dev": {
         "ext-pdo_sqlite": "*",
         "ext-pdo_mysql": "*",
         "ext-pdo_pgsql": "*",
         "psr/log": "^1.1",
-        "doctrine/annotations": "^1.13",
         "php-parallel-lint/php-parallel-lint": "^1.3",
         "phpstan/phpstan": "^1.7.10",
         "phpunit/phpunit": "^9.5",
@@ -74,5 +75,11 @@
                 "phpstan-extension.neon"
             ]
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kmoussouni/DoctrineBehaviors.git"
+        }
+    ]
 }
