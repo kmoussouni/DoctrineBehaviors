@@ -24,7 +24,7 @@
         "symfony/framework-bundle": "^7.0",
         "symfony/string": "^7.0",
         "symfony/translation-contracts": "^2.4|^3.0",
-        "nette/utils": "^3.2",
+        "nette/utils": "^v4.0.5",
         "ramsey/uuid": "^4.2",
         "doctrine/annotations": "^2.0",
         "doctrine/lexer": "^3.0"
